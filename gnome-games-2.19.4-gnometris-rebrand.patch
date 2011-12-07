@@ -1,0 +1,42 @@
+diff -up gnome-games-2.19.4/README.rebrand gnome-games-2.19.4/README
+--- gnome-games-2.19.4/README.rebrand	2007-06-18 19:54:25.000000000 +0200
++++ gnome-games-2.19.4/README	2007-07-21 09:36:43.000000000 +0200
+@@ -48,8 +48,8 @@ Four-in-a-row   The classic game where e
+                 popular version of this in the real world called
+                 Connect Four. (gnect)
+ 
+-Gnometris       That Russian game of fitting falling geometric
+-                shapes. Need I say more ? (gnometris)
++GnomeFallingBlocks   That Russian game of fitting falling geometric
++                shapes. Need I say more ? (gnome-falling-blocks)
+ 
+ Iagno           Gnome version of the popular Othello (R) disk flipping
+                 game. The goal is to control all the disks on the
+diff -up gnome-games-2.19.4/gnometris/help/C/gnometris.xml.rebrand gnome-games-2.19.4/gnometris/help/C/gnometris.xml
+--- gnome-games-2.19.4/gnometris/help/C/gnometris.xml.rebrand	2007-06-18 21:03:52.000000000 +0200
++++ gnome-games-2.19.4/gnometris/help/C/gnometris.xml	2007-07-21 09:37:37.000000000 +0200
+@@ -122,10 +122,10 @@ application or
+  <title>Introduction</title>
+ 
+ <!--synopsis of game-->
+-  <para><application>Gnometris</application> comes from the classic falling-block game, <application>Tetris</application>. The goal of the game is to create complete horizontal lines of blocks, which will disappear. The blocks come in seven different shapes made from four blocks each: one straight, two L-shaped, one square, and two S-shaped. The blocks fall from the top center of the screen in a random order. You rotate the blocks and move them across the screen to drop them in complete lines. You score by dropping blocks fast and completing lines. As your score gets higher, you level up and the blocks fall faster.</para>
++  <para>The goal of <application>Gnometris</application> is to create complete horizontal lines of blocks, which will disappear. The blocks come in seven different shapes made from four blocks each: one straight, two L-shaped, one square, and two S-shaped. The blocks fall from the top center of the screen in a random order. You rotate the blocks and move them across the screen to drop them in complete lines. You score by dropping blocks fast and completing lines. As your score gets higher, you level up and the blocks fall faster.</para>
+ 
+ <!--running game-->
+-   <para>To run <application>Gnometris</application>, select <menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type <command>gnometris</command> in the command line.</para>
++   <para>To run <application>Gnometris</application>, select <menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type <command>gnome-falling-blocks</command> in the command line.</para>
+ 
+ <!--part of gnome-games-->
+    <para><application>Gnometris</application> is included in the <filename>gnome-games</filename> package, which is part of the GNOME desktop environment. This document describes version &version; of <application>Gnometris</application>.</para>
+diff -up gnome-games-2.19.4/gnometris/gnometris.desktop.in.rebrand gnome-games-2.19.4/gnometris/gnometris.desktop.in
+--- gnome-games-2.19.4/gnometris/gnometris.desktop.in.in.rebrand	2007-06-18 19:54:00.000000000 +0200
++++ gnome-games-2.19.4/gnometris/gnometris.desktop.in.in	2007-07-21 09:36:43.000000000 +0200
+@@ -3,7 +3,7 @@ Encoding=UTF-8
+ _Name=Gnometris
+ _Comment=Fit falling blocks together
+ Icon=gnome-gnometris
+-Exec=gnometris
++Exec=gnome-falling-blocks
+ Terminal=false
+ Type=Application
+ Categories=GNOME;GTK;Game;BlocksGame;
